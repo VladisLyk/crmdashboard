@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/app.js" defer></script>
+</head>
+<body>
+    <div class="d-flex" style="background-color: #eff2fd;">
+        <div class="navbar p-4">
+            <div class="navbar__wrapper w-100">
+                <div class="navbar__header w-100 d-flex align-items-center">
+                    <img class="navbar__logoicon" src="/assets/images/icons/navlogo.svg" alt="">
+                    <p class="navbar__logotext">Dashboard</p>
+                    <button class="menu-toggle"><img src="/assets/images/icons/arrow.svg"></button>
+                </div>
+                <nav class="navbar__links mt-4">
+                    <li class="navbar__link w-100">
+                        <div class="navbar__link__wrapper">
+                            <div class="navbar__link__body d-flex justify-content-center">
+                                <img src="/assets/images/icons/dashboard.svg" class="navbar__link__icon" alt="icon">
+                                <p class="navbar__link__text">Dashboard</p>
+                            </div>
+                            <img src="/assets/images/icons/arrow.svg" class="d-none navbar__link__arrow" alt="arrow">
+                        </div>
+                    </li>
+                    <li class="navbar__link w-100">
+                        <div class="navbar__link__wrapper">
+                            <div class="navbar__link__body d-flex justify-content-center">
+                                <img src="/assets/images/icons/product.svg" class="navbar__link__icon" alt="icon">
+                                <p class="navbar__link__text">Product</p>
+                            </div>
+                            <img src="/assets/images/icons/arrow.svg" class="d-none navbar__link__arrow" alt="arrow">                            
+                        </div>
+                    </li>
+                    <li class="navbar__link active w-100" data-slider="customers">
+                        <div class="navbar__link__wrapper">
+                            <div class="navbar__link__body d-flex justify-content-center">
+                                <img src="/assets/images/icons/discount.svg" class="navbar__link__icon" alt="icon">
+                                <p class="navbar__link__text">Customers</p>
+                            </div>
+                            <img src="/assets/images/icons/arrow.svg" class="navbar__link__arrow" alt="arrow">
+                        </div>
+                        <div class="navbar__link__slider d-block">
+                            <div class="slider__wrapper">
+                                <button class="slider__btn">
+                                    Add customer
+                                </button>
+                                <button class="slider__btn">
+                                    Remove customer
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="navbar__link w-100">
+                        <div class="navbar__link__wrapper">
+                            <div class="navbar__link__body d-flex justify-content-center">
+                                <img src="/assets/images/icons/wallet.svg" class="navbar__link__icon" alt="icon">
+                                <p class="navbar__link__text">Income</p>
+                            </div>
+                            <img src="/assets/images/icons/arrow.svg" class="d-none navbar__link__arrow" alt="arrow">
+                        </div>
+                    </li>
+                    <li class="navbar__link w-100">
+                        <div class="navbar__link__wrapper">
+                            <div class="navbar__link__body d-flex justify-content-center">
+                                <img src="/assets/images/icons/discount.svg" class="navbar__link__icon" alt="icon">
+                                <p class="navbar__link__text">Promote</p>
+                            </div>
+                            <img src="/assets/images/icons/arrow.svg" class="d-none navbar__link__arrow" alt="arrow">
+                        </div>
+                    </li>
+                    <li class="navbar__link w-100">
+                        <div class="navbar__link__wrapper">
+                            <div class="navbar__link__body d-flex justify-content-center">
+                                <img src="/assets/images/icons/help.svg" class="navbar__link__icon" alt="icon">
+                                <p class="navbar__link__text">Help</p>
+                            </div>
+                            <img src="/assets/images/icons/arrow.svg" class="d-none navbar__link__arrow" alt="arrow">
+                        </div>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__wrapper">
+                <div class="content__body">
+                    <div class="content__header">Hello Evano 👋🏼,</div>
+                    <div class="customers p-5">
+                        <div class="customers__header d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="customers__header__title">
+                                <p class="title">All Customers</p>
+                                <p class="subtitle">Active Members</p>
+                            </div>
+                            <div class="customers__header_search p-2 d-flex justify-content-center align-items-center">
+                                <img src="/assets/images/icons/search.svg" class="search_icon me-2" alt="searcg">
+                                <input type="text" placeholder="Search" class="search_input">
+                            </div>
+                        </div>
+                        <div class="customers__content">
+                            <div style="overflow-x:auto;" class="table-responsive">
+                                <table class="table table2">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Company</th>
+                                        <th scope="col">Phone Number</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Country</th>
+                                        <th scope="col">Status</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>Jane Cooper</th>
+                                        <td>Microsoft</td>
+                                        <td>(225) 555-0118</td>
+                                        <td>jane@microsoft.com</td>
+                                        <td>United States</td>
+                                        <td><span class="status w-100 active p-3 pt-1 pb-1">Active</span></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Floyd Miles</th>
+                                        <td>Yahoo</td>
+                                        <td>(205) 555-0100</td>
+                                        <td>floyd@yahoo.com</td>
+                                        <td>Kiribati</td>
+                                        <td><span class="status w-100 inactive p-3 pt-1 pb-1">Inactive</span></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Ronald Richards</th>
+                                        <td>Adobe</td>
+                                        <td>(302) 555-0107</td>
+                                        <td>ronald@adobe.com</td>
+                                        <td>Israel</td>
+                                        <td><span class="status inactive p-3 pt-1 pb-1">Inactive</span></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Marvin McKinney</th>
+                                        <td>Tesla</td>
+                                        <td>(252) 555-0126</td>
+                                        <td>marvin@tesla.com</td>
+                                        <td>Iran</td>
+                                        <td><span class="status active p-3 pt-1 pb-1">Active</span></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Jerome Bell</th>
+                                        <td>Google</td>
+                                        <td>(629) 555-0129</td>
+                                        <td>jerome@google.com</td>
+                                        <td>Réunion</td>
+                                        <td><span class="status active p-3 pt-1 pb-1">Active</span></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Kathryn Murphy</th>
+                                        <td>Microsoft</td>
+                                        <td>(406) 555-0120</td>
+                                        <td>kathryn@microsoft.com</td>
+                                        <td>Curaçao</td>
+                                        <td><span class="status active p-3 pt-1 pb-1">Active</span></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Jacob Jones</th>
+                                        <td>Yahoo</td>
+                                        <td>(208) 555-0112</td>
+                                        <td>jacob@yahoo.com</td>
+                                        <td>Brazil</td>
+                                        <td><span class="status active p-3 pt-1 pb-1">Active</span></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="customers__footer d-flex justify-content-between align-items-center flex-wrap">
+                            <p class="customers__footer__list">
+                                Showing data 1 to 8 of 256K entries
+                            </p>
+                            <div class="customers__pagebtns">
+                                <nav>
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#"><</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">></a>
+                                      </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
